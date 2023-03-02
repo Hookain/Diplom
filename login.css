@@ -1,40 +1,49 @@
-body{
+body {
     background-image: url("./images/LED-Street-Light.jpg");
+    background-size: cover;
     padding: 0;
     margin: 0;
-    background-size: 1800px;
   }
   
-  
-  section{
-    background-color: #96c7f8;
-    width: 25%;
-    margin: 300px auto;
+  section {
+    background-color: #ffffff;
+    border: 2px solid #96c7f8;
     border-radius: 10px;
-    border: 5px solid white;
-}
-
-article div{
+    margin: 100px auto;
+    padding: 40px;
+    max-width: 600px;
+  }
+  
+  article div {
     font-family: 'Poppins', sans-serif;
-    padding-bottom: 20px;
-}
-
-article label{
-    margin-left: 40px;
-    color: rgb(0,0, 22);
-}
-
-article input{
-    width: 115px;
-    padding-bottom: 5px;
-    padding-top: 10px;
-    margin-left: 40px;
-    box-sizing: none;
-    background: #96c7f8;
+    margin-bottom: 20px;
+  }
+  
+  article label {
+    color: #333333;
+    display: block;
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+  
+  article input {
+    background: transparent;
     border: none;
-    font-size: medium;
-    border-bottom: 1px solid rgb(1,1,51);
-}
-::placeholder{
-    color: rgb(92, 140, 180);
-}
+    border-bottom: 2px solid #96c7f8;
+    box-sizing: border-box;
+    color: #333333;
+    font-size: 16px;
+    padding: 10px 0;
+    width: 100%;
+  }
+  
+  article input:focus {
+    outline: none;
+    border-color: #333333;
+  }
+  
+  ::placeholder {
+    color: #999999;
+    font-size: 14px;
+  }
