@@ -32,9 +32,9 @@
                 </div>
             </form>
             <form action="register.php" method="GET">
-                <div class="buttons">
+                <!-- <div class="buttons">
                     <button type="submit" class="button" id="register">Create new account</button>
-                </div>
+                </div> -->
             </form>
         </article>
     </section>
