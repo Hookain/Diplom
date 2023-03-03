@@ -18,8 +18,9 @@
     
                 <div>
                     <label for="uname">Username<span style="color: red; font-size: 20px;">*</span></label>
-                    <input type="text" id="uname" placeholder="Enter Username" pattern="[a,z]" required> 
+                    <input type="text" id="uname" placeholder="Enter Username" pattern="[a-zA-Z0-9!@#$%^&*()_+-=,.<>/?;:'\"[\]{}|`~]+" required> 
                 </div>
+
     
                 <div>
                     <label for="pword">Password<span style="color: red; font-size: 20px;">*</span></label>
