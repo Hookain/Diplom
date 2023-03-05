@@ -1,4 +1,35 @@
+<?php 
+session_start();
 
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+
+    include "db_connect.php";
+
+    $stmt = $conn->prepare("SELECT * FROM users WHERE username = ?");
+    $stmt->bind_param("s", $username);
+    $stmt->execute();
+    $result = $stmt->get_result();
+
+    if ($result->num_rows == 1) {
+        $row = $result->fetch_assoc();
+        if (password_verify($password, $row['password'])) {
+            $_SESSION['username'] = $username;
+            $_SESSION['loggedin'] = true;
+            header("Location: dashboard.php");
+            exit();
+        } else {
+            $error_message = "Incorrect password";
+        }
+    } else {
+        $error_message = "Username not found";
+    }
+
+    $stmt->close();
+    $conn->close();
+}
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -13,19 +44,19 @@
 <body>
     <section>
         <article>
-            <form action="register_check" method="GET">
+            <form action="" method="post" id="login-form">
                 <div>
                     <h1>LogIn</h1>
                 </div>
     
                 <div>
-                    <label for="uname">Username<span style="color: red; font-size: 20px;">*</span></label>
-                    <input type="text" id="uname" placeholder="Enter Username" pattern="[A,Z], [a,z], [0,9]" required> 
+                    <label for="username">Username<span style="color: red; font-size: 20px;">*</span></label>
+                    <input type="text" id="username" name="username" placeholder="Enter Username" pattern="" required>
                 </div>
     
                 <div>
-                    <label for="pword">Password<span style="color: red; font-size: 20px;">*</span></label>
-                    <input type="password" id="pword" placeholder="Enter Password" pattern="[a,z], [0,9]" required> 
+                    <label for="password">Password<span style="color: red; font-size: 20px;">*</span></label>
+                    <input type="password" id="password" name="password" placeholder="Enter Password" pattern="[a,z], [0,9]" required>  
                 </div>
                 <div class="buttons">
                     <button type="submit" class="button" id="login">Log In</button>
