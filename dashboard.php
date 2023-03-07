@@ -35,7 +35,7 @@
               My Account
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="">Account Information</a></li>
+              <li><a class="dropdown-item" href="account_information.php">Account Information</a></li>
               <li><a class="dropdown-item" href="index.php">SignOut</a></li>
               <li><hr class="dropdown-divider"></li>
             </ul>

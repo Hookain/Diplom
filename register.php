@@ -15,7 +15,7 @@ include('db_connect.php');
 <body>
      <section>
         <article>
-            <form action="check_redirect.php" method="post">
+            <form action="check_redirect.php" method="post" novalidate>
                 <div>
                     <h1>Create new account</h1>
                 </div>

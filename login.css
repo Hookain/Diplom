@@ -73,3 +73,12 @@ body {
   #register {
     background-color: #f44336;
   }
+
+  .error {
+    background: #f2dede;
+    color: #db1613;
+    padding: 10px;
+    width: 95%;
+    border-radius: 5px;
+    margin: 20px auto;
+  }
