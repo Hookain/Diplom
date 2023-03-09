@@ -105,3 +105,68 @@
     color: #000;
   }
 
+  
+  .account-info {
+    margin-top: 40px;
+    text-align: center;
+  }
+  
+  .account-info h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  
+  .account-info article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .account-info div {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  .account-info label {
+    color: #333333;
+    display: block;
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+  
+  .account-info input {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #96c7f8;
+    box-sizing: border-box;
+    color: #333333;
+    font-size: 16px;
+    padding: 10px 0;
+    width: 100%;
+  }
+  
+  .account-info table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .account-info th,
+  .account-info td {
+    padding: 10px;
+    border: 1px solid #96c7f8;
+  }
+  
+  .account-info th {
+    background-color: #96c7f8;
+    color: #ffffff;
+    text-align: left;
+    font-weight: 600;
+  }
+  
+  .account-info td {
+    text-align: center;
+  }
+  
