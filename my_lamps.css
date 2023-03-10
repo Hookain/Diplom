@@ -1,0 +1,82 @@
+body {
+    background-image: url("./images/LED-Street-Light.jpg");
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+  }
+  
+  section {
+    background-color: #ffffff;
+    border: 2px solid #96c7f8;
+    border-radius: 10px;
+    margin: 100px auto;
+    padding: 40px;
+    max-width: 600px;
+  }
+  
+  article div {
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
+  }
+  
+  article label {
+    color: #333333;
+    display: block;
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+  
+  article input {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #96c7f8;
+    box-sizing: border-box;
+    color: #333333;
+    font-size: 16px;
+    padding: 10px 0;
+    width: 100%;
+  }
+  
+  .lamp-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .lamp-info__name {
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  .lamp-info__status {
+    display: flex;
+    align-items: center;
+  }
+  
+  .lamp-info__status-text {
+    margin-right: 10px;
+  }
+  
+  .lamp-info__toggle {
+    display: inline-block;
+    background-color: #ccc;
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .lamp-info__toggle.on {
+    background-color: #4CAF50;
+  }
+  
+  .lamp-info__toggle.off {
+    background-color: #f44336;
+  }
+  

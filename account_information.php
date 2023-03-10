@@ -38,17 +38,8 @@ $conn->close();
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="./account_information.css" />
   <title>SSL Website</title>
-
-  <style>
-    body {
-      background-image: url("./images/LED-Street-Light.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-  </style>
-
 </head>
 
 <body>
